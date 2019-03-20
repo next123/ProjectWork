@@ -29,6 +29,7 @@ this.qrScanner.prepare()
        });
 
      } else if (status.denied) {
+      this.qrScanner.openSettings();
        // camera permission was permanently denied
        // you must use QRScanner.openSettings() method to guide the user to the settings page
        // then they can grant the permission from there

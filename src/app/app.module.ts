@@ -14,6 +14,8 @@ import { PreferitiPage } from '../pages/preferiti/preferiti';
 import { QrScanPage } from '../pages/qr-scan/qr-scan';
 import { PercorsiPage } from '../pages/percorsi/percorsi';
 import { QRScanner } from '@ionic-native/qr-scanner';
+import{} from 'google-maps';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -29,6 +31,7 @@ import { QRScanner } from '@ionic-native/qr-scanner';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
