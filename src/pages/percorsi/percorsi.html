@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
   <ion-navbar>
     <ion-title>percorsi</ion-title>
@@ -15,4 +15,52 @@
 
 <ion-content padding>
 
+</ion-content> -->
+
+
+<ion-header>
+
+	<ion-navbar color="secondary">
+		<ion-title>Percorsi</ion-title>
+		
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+	<ion-toolbar>
+		<ion-searchbar [(ngModel)]="searchQuery" 
+						(ionInput)="getParks($event)" 
+						(ionClear)="resetList($event)"></ion-searchbar>
+	</ion-toolbar>
+
+	<ion-list [virtualScroll]="places" [headerFn]="customHeaderFn">
+
+		<ion-item-divider *virtualHeader="let header">
+			{{ header }}
+		</ion-item-divider>
+
+		<ion-item *virtualItem="let place" (click)="goPlaceDetails(place)" detail-push>
+			<ion-thumbnail item-left>
+				<img src="assets/img/thumbs/{{ place.image }}">
+			</ion-thumbnail>
+			<h2>{{ place.name }}</h2>
+			<p>{{ place.state }}</p>
+		</ion-item>
+
+	</ion-list>
+
+	<!--ion-list>
+		<ion-item *ngFor="let park of parks" (click)="goParkDetails(park)" detail-push>
+			<ion-thumbnail item-left>
+				<img src="assets/img/thumbs/{{ park.image }}">
+			</ion-thumbnail>
+			<h2>{{ park.name }}</h2>
+			<p>{{ park.state }}</p>
+		</ion-item>
+	</ion-list-->
+
+	
+	
 </ion-content>

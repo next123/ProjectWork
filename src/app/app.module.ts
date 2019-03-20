@@ -16,6 +16,7 @@ import { PercorsiPage } from '../pages/percorsi/percorsi';
 import { QRScanner } from '@ionic-native/qr-scanner';
 import{} from 'google-maps';
 import { HttpClientModule } from '@angular/common/http';
+import { DettaglioPostiPage } from '../pages/dettaglio-posti/dettaglio-posti';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ImpostazionePage,
     PreferitiPage,
     QrScanPage,
-    PercorsiPage
+    PercorsiPage,
+    DettaglioPostiPage
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { HttpClientModule } from '@angular/common/http';
     ImpostazionePage,
     PreferitiPage,
     QrScanPage,
-    PercorsiPage
+    PercorsiPage,
+    DettaglioPostiPage
   ],
   providers: [
     StatusBar,
