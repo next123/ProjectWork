@@ -36,10 +36,6 @@
 	</ion-toolbar> -->
 	<h1>Percorsi</h1>	
 		<ion-list [virtualScroll]="percorsi" [headerFn]="customHeaderFn">
-<!-- 
-			<ion-item-divider *virtualHeader="let header">
-				{{ header }}
-			</ion-item-divider> -->
 			<ion-slides pager="true" >
 			<ion-item *virtualItem="let percorso" (click)="goPercorsiDetails(percorso)" detail-push>
 			<ion-slide>
@@ -58,10 +54,6 @@
 	<h1>Luoghi</h1>
 	<ion-list [virtualScroll]="places" [headerFn]="customHeaderFn">
 
-		<ion-item-divider *virtualHeader="let header">
-			{{ header }}
-		</ion-item-divider>
-
 		<ion-item *virtualItem="let place" (click)="goPlaceDetails(place)" detail-push>
 			<ion-thumbnail item-left>
 				<img src="assets/img/thumbs/{{ place.image }}">
@@ -70,18 +62,6 @@
 			<p>{{ place.state }}</p>
 		</ion-item>
 
-	</ion-list>
-
-	<!--ion-list>
-		<ion-item *ngFor="let park of parks" (click)="goParkDetails(park)" detail-push>
-			<ion-thumbnail item-left>
-				<img src="assets/img/thumbs/{{ park.image }}">
-			</ion-thumbnail>
-			<h2>{{ park.name }}</h2>
-			<p>{{ park.state }}</p>
-		</ion-item>
-	</ion-list-->
-
-	
+	</ion-list>	
 	
 </ion-content>

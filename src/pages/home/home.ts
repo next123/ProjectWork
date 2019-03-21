@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import { NavController, Platform, ModalController } from 'ionic-angular';
 import { ParkDataProvider } from '../../provider/park-data/park-data';
 import { Park } from '../../models/park';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { DettaglioPostiPage } from '../dettaglio-posti/dettaglio-posti';
 
 
 //import { ParkDetailsPage } from '../park-details/park-details';
@@ -20,12 +21,14 @@ export class HomePage {
 	public map: google.maps.Map;
 	parkData: ParkDataProvider;
 	parks: any;
-  data: any = null;
+    data: any = null;
 	//public parks: Array<Park> = [];
 
   constructor(public navCtrl: NavController,
 		public platform: Platform,
-		public http: HttpClient) {
+		public http: HttpClient,
+		public modalCtr:ModalController
+		) {
 
 	}
 	
@@ -225,14 +228,16 @@ export class HomePage {
 				Marker.setMap(this.map);
 				//parkMarker.setIcon(image);
 
-				google.maps.event.addListener(Marker, 'click', () => {
-          let selectedMarker: any = Marker;
-          this.navCtrl.push(HomePage, {
-            parkData: selectedMarker.parkData
+		google.maps.event.addListener(Marker, 'click', () => {
+		  let selectedMarker: any = Marker;
+		  console.log(Marker)
+         let riggio = this.modalCtr.create( DettaglioPostiPage, { data: Marker })
+     		riggio.present();
           });
-        });
-			}
-		});
+		}
+		
+	});
+		
 
 }
 

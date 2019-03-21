@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { ChiSiamoPage } from '../chi-siamo/chi-siamo';
 import { Page1Page } from '../page1/page1';
 import { Page2Page } from '../page2/page2';
@@ -11,7 +11,8 @@ import { ContattiPage } from '../contatti/contatti';
 })
 export class ImpostazionePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public  modalCtr :ModalController) {
   }
 
   ionViewDidLoad() {
@@ -20,19 +21,19 @@ export class ImpostazionePage {
 
   goToChiSiamo()
   {
-    this.navCtrl.push(ChiSiamoPage);
+    this.modalCtr.create(ChiSiamoPage);
   }
   goTopag1()
   {
-    this.navCtrl.push(Page1Page);
+    this.modalCtr.create(Page1Page);
   }
   goTopag2()
   {
-    this.navCtrl.push(Page2Page);
+    this.modalCtr.create(Page2Page);
   }
   goToContatti()
   {
-    this.navCtrl.push(ContattiPage);
+    this.modalCtr.create(ContattiPage);
   }
 
 }

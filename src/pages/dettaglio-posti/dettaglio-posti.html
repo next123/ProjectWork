@@ -1,7 +1,15 @@
 
+<ion-header>
+	<ion-navbar color="primary">
+			<ion-title>{{placeInfo.name}}</ion-title>
+			<button end (click) = "closeModal()">
+					<ion-icon name="md-arrow-back"></ion-icon>
+		</button>
+	</ion-navbar>
+</ion-header>
 <ion-content>
 
-	<img src="assets/img/headers/{{ placeInfo.image }}">
+	<img src="assets/img/{{ placeInfo.image }}">
 
 	<h1 padding>{{ placeInfo.name }}</h1>
 

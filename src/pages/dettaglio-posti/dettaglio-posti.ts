@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 
 @Component({
@@ -10,12 +10,19 @@ export class DettaglioPostiPage {
 
   public placeInfo: Object;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public viewCtr:ViewController
+    ) {
     
-    this.placeInfo = this.navParams.data.data;
+    this.placeInfo = this.navParams.get('data');
 
   }
   
-
+  closeModal()
+  {
+    this.viewCtr.dismiss();
+  }
 
 }

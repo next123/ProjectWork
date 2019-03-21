@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  NavController, NavParams, LoadingController } from 'ionic-angular';
+import {  NavController, NavParams, LoadingController, ModalController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { DettaglioPostiPage } from '../dettaglio-posti/dettaglio-posti';
 
@@ -22,7 +22,8 @@ export class PercorsiPage {
   constructor(public navCtrl: NavController,
      public navParams: NavParams ,
      public loadingCtrl: LoadingController,
-     public http: HttpClient) {
+     public http: HttpClient,
+     public modalCtr:ModalController) {
   }
 
   ionViewDidLoad() {
@@ -75,8 +76,8 @@ export class PercorsiPage {
 
   goPlaceDetails(place){
   console.log(place);
-  this.navCtrl.push( DettaglioPostiPage, { data: place })
-
+  const riggio = this.modalCtr.create( DettaglioPostiPage, { data: place })
+    riggio.present();
   }
   
 }
