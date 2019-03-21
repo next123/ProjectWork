@@ -17,6 +17,11 @@ import { QRScanner } from '@ionic-native/qr-scanner';
 import{} from 'google-maps';
 import { HttpClientModule } from '@angular/common/http';
 import { DettaglioPostiPage } from '../pages/dettaglio-posti/dettaglio-posti';
+import { ChiSiamoPage } from '../pages/chi-siamo/chi-siamo';
+import { ContattiPage } from '../pages/contatti/contatti';
+import { Page1Page } from '../pages/page1/page1';
+import { Page2Page } from '../pages/page2/page2';
+
 
 
 @NgModule({
@@ -29,7 +34,11 @@ import { DettaglioPostiPage } from '../pages/dettaglio-posti/dettaglio-posti';
     PreferitiPage,
     QrScanPage,
     PercorsiPage,
-    DettaglioPostiPage
+    DettaglioPostiPage,
+    ChiSiamoPage,
+    ContattiPage,
+    Page1Page,
+    Page2Page
   ],
   imports: [
     BrowserModule,
@@ -46,7 +55,11 @@ import { DettaglioPostiPage } from '../pages/dettaglio-posti/dettaglio-posti';
     PreferitiPage,
     QrScanPage,
     PercorsiPage,
-    DettaglioPostiPage
+    DettaglioPostiPage,
+    ChiSiamoPage,
+    ContattiPage,
+    Page1Page,
+    Page2Page
   ],
   providers: [
     StatusBar,

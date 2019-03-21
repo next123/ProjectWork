@@ -29,12 +29,31 @@
 
 <ion-content>
 
-	<ion-toolbar>
+	<!-- <ion-toolbar>
 		<ion-searchbar [(ngModel)]="searchQuery" 
-						(ionInput)="getParks($event)" 
+						(ionInput)="load($event)" 
 						(ionClear)="resetList($event)"></ion-searchbar>
-	</ion-toolbar>
+	</ion-toolbar> -->
+	<h1>Percorsi</h1>
+	<ion-list [virtualScroll]="percorsi" [headerFn]="customHeaderFn">
 
+		<ion-item-divider *virtualHeader="let header">
+			{{ header }}
+		</ion-item-divider>
+
+		<ion-item *virtualItem="let percorso" (click)="goPercorsiDetails(percorso)" detail-push>
+			<ion-thumbnail item-left>
+				<img src="assets/img/thumbs/{{ percorso.image }}">
+			</ion-thumbnail>
+			<h2>{{ percorso.name }}</h2>
+			<p>{{ percorso.state }}</p>
+		</ion-item>
+
+	</ion-list>
+
+
+
+	<h1>Luoghi</h1>
 	<ion-list [virtualScroll]="places" [headerFn]="customHeaderFn">
 
 		<ion-item-divider *virtualHeader="let header">

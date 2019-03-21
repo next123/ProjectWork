@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import { DettaglioPostiPage } from '../dettaglio-posti/dettaglio-posti';
 
 
 @Component({
@@ -22,6 +23,7 @@ this.qrScanner.prepare()
     
        // start scanning
        let scanSub = this.qrScanner.scan().subscribe((text: string) => {
+        this.navCtrl.push( DettaglioPostiPage, { data: text })
          console.log('Scanned something', text);
 
          this.qrScanner.hide(); // hide camera preview
