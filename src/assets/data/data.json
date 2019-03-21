@@ -1,134 +1,260 @@
+
 [
     {
-        "id": 0,
-        "idPercorso": 0,
-        "name": "Acadia",
-        "createDate": "February 26, 1919",
-        "lat": 44.35,
-        "long": -68.21,
+        "id": 59,
+        "idPercorso":0,
+        "name": "Piazza Bra",        
+        "createDate": "Prima metà del XVI secolo",
+        "lat": 45.44,
+        "long": 10.99,
         "distance": 0,
-        "image": "acadia.jpg",
-        "state": "Maine",
-        "data": "Covering most of Mount Desert Island and other coastal islands, Acadia preserves the tallest mountain on the Atlantic coast, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats."
+        "image": "piazzabra.jpg",
+        "state": "Italia",
+        "data": "Piazza Bra, che fonde edifici di epoche ed architetture diverse. L'Arena, palazzo Barbieri e la Gran Guardia sono quelli più celebri ed ammirati, ma non da meno sono la Fontana delle Alpi, il Liston con i suoi palazzi nobiliari, le mura viscontee, la statua di Vittorio Emanuele II e la Torre Pentagona."
+    },
+    
+    {
+        "id": 60,
+        "idPercorso":0,
+        "name": "Parco delle Mura",
+        "createDate": "Tra il 1300 e il 1850 circa",
+        "lat": 45.45,
+        "long": 10.98,
+        "distance": 0,
+        "image": "parcomura.png",
+        "state": "Italia",
+        "data": "This geologically unique area has colorful sandstone canyons, high plateaus, and rock towers. Natural arches and exposed formations of the Colorado Plateau make up a large wilderness of four ecosystems."
+    },
+    
+    {
+        "id": 61,
+        "idPercorso":0,
+        "name": "Parco dell'Adige",
+        "createDate": "Febbraio 28, 2005",
+        "lat": 45.42,
+        "long": 10.97,
+        "distance": 0,
+        "image": "parcoadige.png",
+        "state": "Italia",
+        "data": "Il Parco dell'Adige é un'area naturale protetta di interesse locale che si sviluppa una superficie di oltre 1 milione di metri quadrati."
+    },
+    
+    {
+        "id": 62,
+        "idPercorso":0,
+        "name": "Parco Naturale Regionale della Lessinia",
+        "createDate": "Gennaio 30, 1990",
+        "lat": 45.69,
+        "long": 11.05,
+        "distance": 0,
+        "image": "parcolessinia.png",
+        "state": "Italia",
+        "data": "Il Parco Regionale della Lessinia si estende per oltre 10.000 ettari sull’altopiano dei Monti Lessini e racchiude una sorprendente varietà di testimonianze naturalistiche, storiche e archeologiche di inestimabile valore."
+    },
+    
+    
+    {
+        "id": 63,
+        "idPercorso":0,
+        "name": "Giardino Giusti",
+        "createDate": "Fine del 1400",
+        "lat": 45.44,
+        "long": 11.01,
+        "distance": 0,
+        "image": "giardinogiusti.png",
+        "state": "Italia",
+        "data": "Visitato e celebrato nei secoli da illustri personaggi della storia e della cultura (tra cui Cosimo De' Medici, De Brosses, Addison, l'imperatore Giuseppe II, Goethe, Mozart, Carlo Felice di Savoia, Suares e Gabriel Faure), il Giardino costituisce, con il contiguo palazzo cinquecentesco, un complesso urbano di grande interesse e bellezza."
+    },
+    
+    {
+        "id": 64,
+        "idPercorso":0,
+        "name": "Parco Giardino Sigurtà",
+        "createDate": "Marzo 14, 1407",
+        "lat": 45.36,
+        "long": 10.73,
+        "distance": 0,
+        "image": "sigurta.png",
+        "state": "Italia",
+        "data": "L'itinerario all'interno del Parco è di circa 6 km, articolati su un sali e scendi di vialetti in porfido percorribili sia a piedi che in bici."
+    },   
+    {
+        "id": 65,
+        "idPercorso":0,
+        "name": "Parco Baia delle Sirene",
+        "createDate": "",
+        "lat": 45.57,
+        "long": 10.67,
+        "distance": 0,
+        "image": "baiasirene.png",
+        "state": "Italia",
+        "data": "Il Parco Baia delle Sirene offre il piacere ad adulti e bambini di tuffarsi nelle splendide acque della Baia e la possibilità di trascorrere le calde giornate estive in pieno relax."
+    },   
+    {
+        "id": 66,
+        "idPercorso":0,
+        "name": "Parco Agricampeggio Borghetto",
+        "createDate": "1900",
+        "lat": 45.35,
+        "long": 10.72,
+        "distance": 0,
+        "image": "campoborghetto.png",
+        "state": "Italia",
+        "data": "L’agri-campeggio Parco di Borghetto è situato in una stupenda posizione, sulle colline moreniche a sud del lago di Garda nel Parco del Mincio, a solo 300 metri dal centro di Borghetto, considerato il Borgo più Bello d’Italia."
+    },    
+    {
+        "id": 67,
+        "idPercorso":0,
+        "name": "Parco delle Cascate",
+        "createDate": "",
+        "lat": 45.59,
+        "long": 10.90,
+        "distance": 0,
+        "image": "parcocascate.png",
+        "state": "Italia",
+        "data": "A pochi chilometri da Verona, immerso nel verde, il Parco delle Cascate di Molina vi aspetta per offrirvi il meraviglioso spettacolo delle sue cascate."
+    },
+    
+    {
+        "id": 68,
+        "idPercorso":0,
+        "name": "Giardino di Pojega",
+        "createDate": "1783",
+        "lat": 45.53,
+        "long": 10.95,
+        "distance": 0,
+        "image": "parcopojega.png",
+        "state": "Italia",
+        "data": "Il giardino di Pojega riesce a sintetizzare i canoni classici del giardino all’italiana con il gusto “pittoresco” del nascente Romanticismo."
     },
     {
-        "id": 1,
-        "idPercorso": 0,
-        "name": "American Samoa",
-        "createDate": "October 31, 1988",
-        "lat": -14.25,
-        "long": -170.68,
+        "id": 69,
+        "idPercorso":1,
+        "name": "Piazza Bra",        
+        "createDate": "Prima metà del XVI secolo",
+        "lat": 45.44,
+        "long": 10.99,
         "distance": 0,
-        "image": "americansamoa.jpg",
-        "state": "American Samoa",
-        "data": "The southernmost national park is on three Samoan islands and protects coral reefs, rainforests, volcanic mountains, and white beaches. The area is also home to flying foxes, brown boobies, sea turtles, and 900 species of fish."
+        "image": "piazzabra.jpg",
+        "state": "Italia",
+        "data": "Piazza Bra, che fonde edifici di epoche ed architetture diverse. L'Arena, palazzo Barbieri e la Gran Guardia sono quelli più celebri ed ammirati, ma non da meno sono la Fontana delle Alpi, il Liston con i suoi palazzi nobiliari, le mura viscontee, la statua di Vittorio Emanuele II e la Torre Pentagona."
     },
+    
     {
-        "id": 2,
-        "idPercorso": 0,
-        "name": "Arches",
-        "createDate": "November 12, 1971",
-        "lat": 38.68,
-        "long": -109.57,
+        "id": 70,
+        "idPercorso":1,
+        "name": "Parco delle Mura",
+        "createDate": "Tra il 1300 e il 1850 circa",
+        "lat": 45.45,
+        "long": 10.98,
         "distance": 0,
-        "image": "arches.jpg",
-        "state": "Utah",
-        "data": "This site features more than 2,000 natural sandstone arches, including the Delicate Arch. In a desert climate millions of years of erosion have led to these structures, and the arid ground has life-sustaining soil crust and potholes, natural water-collecting basins. Other geologic formations are stone columns, spires, fins, sand towers."
+        "image": "parcomura.png",
+        "state": "Italia",
+        "data": "This geologically unique area has colorful sandstone canyons, high plateaus, and rock towers. Natural arches and exposed formations of the Colorado Plateau make up a large wilderness of four ecosystems."
     },
+    
     {
-        "id": 3,
-        "idPercorso": 0,
-        "name": "Badlands",
-        "createDate": "November 10, 1978",
-        "lat": 43.75,
-        "long": -102.50,
+        "id": 71,
+        "idPercorso":1,
+        "name": "Parco dell'Adige",
+        "createDate": "Febbraio 28, 2005",
+        "lat": 45.42,
+        "long": 10.97,
         "distance": 0,
-        "image": "badlands.jpg",
-        "state": "South Dakota",
-        "data": "The Badlands are a collection of buttes, pinnacles, spires, and grass prairies. It has the world's richest fossil beds from the Oligocene epoch, and there is wildlife including bison, bighorn sheep, black-footed ferrets, and swift foxes."
+        "image": "parcoadige.png",
+        "state": "Italia",
+        "data": "Il Parco dell'Adige é un'area naturale protetta di interesse locale che si sviluppa una superficie di oltre 1 milione di metri quadrati."
     },
+    
     {
-        "id": 4,
-        "idPercorso": 0,
-        "name": "Big Bend",
-        "createDate": "June 12, 1944",
-        "lat": 29.25,
-        "long": -103.25,
+        "id": 72,
+        "idPercorso":1,
+        "name": "Parco Naturale Regionale della Lessinia",
+        "createDate": "Gennaio 30, 1990",
+        "lat": 45.69,
+        "long": 11.05,
         "distance": 0,
-        "image": "bigbend.jpg",
-        "state": "Texas",
-        "data": "Named for the Bend of the Rio Grande along the US-Mexico border, this park includes a part of the Chihuahuan Desert. A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans exist within its borders."
+        "image": "parcolessinia.png",
+        "state": "Italia",
+        "data": "Il Parco Regionale della Lessinia si estende per oltre 10.000 ettari sull’altopiano dei Monti Lessini e racchiude una sorprendente varietà di testimonianze naturalistiche, storiche e archeologiche di inestimabile valore."
     },
+    
+    
     {
-        "id": 5,
-        "idPercorso": 1,
-        "name": "Biscayne",
-        "createDate": "June 28, 1980",
-        "lat": 25.65,
-        "long": -80.08,
+        "id": 73,
+        "idPercorso":1,
+        "name": "Giardino Giusti",
+        "createDate": "Fine del 1400",
+        "lat": 45.44,
+        "long": 11.01,
         "distance": 0,
-        "image": "biscayne.jpg",
-        "state": "Florida",
-        "data": "Located in Biscayne Bay, this park at the north end of the Florida Keys has four interrelated marine ecosystems: mangrove forest, the Bay, the Keys, and coral reefs. Threatened animals include the West Indian Manatee, American crocodile, various sea turtles, and peregrine falcon."
+        "image": "giardinogiusti.png",
+        "state": "Italia",
+        "data": "Visitato e celebrato nei secoli da illustri personaggi della storia e della cultura (tra cui Cosimo De' Medici, De Brosses, Addison, l'imperatore Giuseppe II, Goethe, Mozart, Carlo Felice di Savoia, Suares e Gabriel Faure), il Giardino costituisce, con il contiguo palazzo cinquecentesco, un complesso urbano di grande interesse e bellezza."
     },
+    
     {
-        "id": 6,
-        "idPercorso": 1,
-        "name": "Black Canyon of the Gunnison",
-        "createDate": "October 21, 1999",
-        "lat": 38.57,
-        "long": -107.72,
+        "id": 74,
+        "idPercorso":1,
+        "name": "Parco Giardino Sigurtà",
+        "createDate": "Marzo 14, 1407",
+        "lat": 45.36,
+        "long": 10.73,
         "distance": 0,
-        "image": "blackcanyon.jpg",
-        "state": "Colorado",
-        "data": "The park protects a quarter of the Gunnison River, which has dark canyon walls from the Precambrian era. The canyon has very steep descents, and it is a site for river rafting and rock climbing. The narrow, steep canyon, made of gneiss and schist, is often in shadow, appearing black."
+        "image": "sigurta.png",
+        "state": "Italia",
+        "data": "L'itinerario all'interno del Parco è di circa 6 km, articolati su un sali e scendi di vialetti in porfido percorribili sia a piedi che in bici."
     },
+    
     {
-        "id": 7,
-        "idPercorso": 1,
-        "name": "Bryce Canyon",
-        "createDate": "February 25, 1928",
-        "lat": 37.57,
-        "long": -112.18,
+        "id": 75,
+        "idPercorso":1,
+        "name": "Parco Baia delle Sirene",
+        "createDate": "",
+        "lat": 45.57,
+        "long": 10.67,
         "distance": 0,
-        "image": "brycecanyon.jpg",
-        "state": "Utah",
-        "data": "Bryce Canyon is a giant natural amphitheatre along the Paunsaugunt Plateau. The unique area has hundreds of tall hoodoos formed by erosion. The region was originally settled by Native Americans and later by Mormon pioneers."
+        "image": "baiasirene.png",
+        "state": "Italia",
+        "data": "Il Parco Baia delle Sirene offre il piacere ad adulti e bambini di tuffarsi nelle splendide acque della Baia e la possibilità di trascorrere le calde giornate estive in pieno relax."
     },
+    
     {
-        "id": 8,
-        "idPercorso": 1,
-        "name": "Canyonlands",
-        "createDate": "September 12, 1964",
-        "lat": 38.2,
-        "long": -109.93,
+        "id": 76,
+        "idPercorso":1,
+        "name": "Parco Agricampeggio Borghetto",
+        "createDate": "1900",
+        "lat": 45.35,
+        "long": 10.72,
         "distance": 0,
-        "image": "canyonlands.jpg",
-        "state": "Utah",
-        "data": "This landscape was eroded into canyons, buttes, and mesas by the Colorado River, Green River, and their tributaries, which divide the park into four districts. There are rock pinnacles and other naturally sculpted rock, as well as artifacts from Ancient Pueblo Peoples."
+        "image": "campoborghetto.png",
+        "state": "Italia",
+        "data": "L’agri-campeggio Parco di Borghetto è situato in una stupenda posizione, sulle colline moreniche a sud del lago di Garda nel Parco del Mincio, a solo 300 metri dal centro di Borghetto, considerato il Borgo più Bello d’Italia."
     },
+    
     {
-        "id": 9,
-        "idPercorso": 1,
-        "name": "Capitol Reef",
-        "createDate": "December 18, 1971",
-        "lat": 38.20,
-        "long": -111.17,
+        "id": 77,
+        "idPercorso":1,
+        "name": "Parco delle Cascate",
+        "createDate": "",
+        "lat": 45.59,
+        "long": 10.90,
         "distance": 0,
-        "image": "capitolreefnationalpark.jpg",
-        "state": "Utah",
-        "data": "The park's Waterpocket Fold is a 100-mile (160 km) monocline that shows the Earth's geologic layers. Other natural features are monoliths and sandstone domes and cliffs shaped like the United States Capitol."
+        "image": "parcocascate.png",
+        "state": "Italia",
+        "data": "A pochi chilometri da Verona, immerso nel verde, il Parco delle Cascate di Molina vi aspetta per offrirvi il meraviglioso spettacolo delle sue cascate."
     },
+    
     {
-        "id": 10,
-        "idPercorso": 1,
-        "name": "Carlsbad Caverns",
-        "createDate": "May 14, 1930",
-        "lat": 32.17,
-        "long": -104.44,
+        "id": 78,
+        "idPercorso":1,
+        "name": "Giardino di Pojega",
+        "createDate": "1783",
+        "lat": 45.53,
+        "long": 10.95,
         "distance": 0,
-        "image": "carlsbadcavern.jpg",
-        "state": "New Mexico",
-        "data": "Carlsbad Caverns has 117 caves, the longest of which is over 120 miles (190 km) long. The Big Room is almost 4,000 feet (1,200 m) long, and the caves are home to over 400,000 Mexican Free-tailed Bats and sixteen other species. Above ground are the Chihuahuan Desert and Rattlesnake Springs."
-    }   
-]
+        "image": "parcopojega.png",
+        "state": "Italia",
+        "data": "Il giardino di Pojega riesce a sintetizzare i canoni classici del giardino all’italiana con il gusto “pittoresco” del nascente Romanticismo."
+    }
+  ]

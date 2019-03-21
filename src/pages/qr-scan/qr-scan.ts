@@ -10,6 +10,7 @@ import { DettaglioPostiPage } from '../dettaglio-posti/dettaglio-posti';
 })
 export class QrScanPage {
 
+  private scanSub :any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public qrScanner: QRScanner) {
   }
 
@@ -19,15 +20,16 @@ ionViewDidLoad() {
 this.qrScanner.prepare()
   .then((status: QRScannerStatus) => {
      if (status.authorized) {
+      this.qrScanner.show();
        // camera permission was granted
     
        // start scanning
-       let scanSub = this.qrScanner.scan().subscribe((text: string) => {
+       this.scanSub = this.qrScanner.scan().subscribe((text: string) => {
         this.navCtrl.push( DettaglioPostiPage, { data: text })
          console.log('Scanned something', text);
 
          this.qrScanner.hide(); // hide camera preview
-         scanSub.unsubscribe(); // stop scanning
+         this.scanSub.unsubscribe(); // stop scanning
        });
 
      } else if (status.denied) {
@@ -41,6 +43,12 @@ this.qrScanner.prepare()
   })
   .catch((e: any) => console.log('Error is', e));
 
+  }
+
+  ionViewDidLeave(){
+    this.qrScanner.hide(); // hide camera preview
+    this.scanSub.unsubscribe(); // stop scanning
+    this.scanSub = null;
   }
 
 }
