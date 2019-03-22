@@ -80,6 +80,7 @@ export class PercorsiPage {
   const var1 = this.modalCtr.create( DettaglioPostiPage, { data: place })
     var1.present();
   }
+  
   goPercorsiDetails(percorso){
     const var1 = this.modalCtr.create( ListaLuoghiPage, { data: percorso })
       var1.present();

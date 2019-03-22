@@ -9,7 +9,11 @@ page-tabs
     //     top: 50px;
     //     left: 50px;
     // }
-    ion-tabs{
+    .tabbar {
         z-index: 2;
+        background-color: #155c14 !important;
+    }
+    ion-icon {
+        color: white;
     }
 }

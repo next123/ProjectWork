@@ -22,9 +22,6 @@ export class DettaglioPostiPage {
     
     
     this.idPlace =  this.navParams.get('id');
-  }
-  
-  public ionViewDidLoad() {
 
     console.log(this.placeInfo)
 
@@ -40,6 +37,11 @@ export class DettaglioPostiPage {
       
     }else
     this.placeInfo = this.navParams.get('data');
+  }
+  
+  public ionViewDidLoad() {
+
+ 
   }
 
   closeModal()
