@@ -14,6 +14,9 @@ page-tabs
         background-color: #155c14 !important;
     }
     ion-icon {
-        color: white;
+        color: white !important;
+    }
+    .tab-button-text{
+        color: white !important;
     }
 }

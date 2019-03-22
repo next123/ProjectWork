@@ -218,16 +218,8 @@ export class HomePage {
 			for (let p of this.parks) {
 				let Pos: google.maps.LatLng = new google.maps.LatLng( p.lat, p.long);
 				let Marker: google.maps.Marker = new google.maps.Marker();
-				// console.log(parkMarker)
-				// console.log(this.map)
-				//let parkMarker: CustomMapMarker = new CustomMapMarker(p);
 				Marker.setPosition(Pos);
-				// if (Marker && Marker.setMap) {
-				// 	Marker.setMap(null);
-				// }
 				Marker.setMap(this.map);
-				//parkMarker.setIcon(image);
-
 				
 				google.maps.event.addListener(Marker, 'click', () => {
 		  		let selectedMarker: any = Marker;
@@ -236,10 +228,8 @@ export class HomePage {
          	let var1 = this.modalCtr.create( DettaglioPostiPage, { data: selectedMarker })
 					 var1.present();
           });
-					}
-		
+					}	
 	});
-		
 
 }
 
