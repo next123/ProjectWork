@@ -4,6 +4,7 @@ import { ImpostazionePage } from '../impostazione/impostazione';
 import { QrScanPage } from '../qr-scan/qr-scan';
 import { PreferitiPage } from '../preferiti/preferiti';
 import { PercorsiPage } from '../percorsi/percorsi';
+import { ModalController } from 'ionic-angular';
 
 
 @Component({
@@ -14,11 +15,16 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = PercorsiPage;
-  tab3Root = QrScanPage;
+ 
   tab4Root = PreferitiPage;
   tab5Root = ImpostazionePage;
 
-  constructor() {
+  constructor(public modalCtrl:ModalController) {
 
+  }
+
+  qrScan(){
+    let modal = this.modalCtrl.create(QrScanPage);
+    modal.present();
   }
 }

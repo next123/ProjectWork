@@ -228,13 +228,15 @@ export class HomePage {
 				Marker.setMap(this.map);
 				//parkMarker.setIcon(image);
 
-		google.maps.event.addListener(Marker, 'click', () => {
-		  let selectedMarker: any = Marker;
-		  console.log(Marker)
-         let riggio = this.modalCtr.create( DettaglioPostiPage, { data: Marker })
-     		riggio.present();
+				
+				google.maps.event.addListener(Marker, 'click', () => {
+		  		let selectedMarker: any = Marker;
+		  
+		  		console.log(selectedMarker)
+         	let var1 = this.modalCtr.create( DettaglioPostiPage, { data: selectedMarker })
+					 var1.present();
           });
-		}
+					}
 		
 	});
 		

@@ -21,19 +21,23 @@ export class ImpostazionePage {
 
   goToChiSiamo()
   {
-    this.modalCtr.create(ChiSiamoPage);
+    let var1 = this.modalCtr.create(ChiSiamoPage);
+    var1.present()
   }
   goTopag1()
   {
-    this.modalCtr.create(Page1Page);
+    let var2 =  this.modalCtr.create(Page1Page);
+    var2.present();
   }
   goTopag2()
   {
-    this.modalCtr.create(Page2Page);
+    let var3 = this.modalCtr.create(Page2Page);
+    var3.present();
   }
   goToContatti()
   {
-    this.modalCtr.create(ContattiPage);
+    let var4 = this.modalCtr.create(ContattiPage);
+    var4.present();
   }
 
 }

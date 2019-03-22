@@ -130,7 +130,7 @@
     {
         "id": 69,
         "idPercorso":1,
-        "name": "Piazza Bra",        
+        "name": "Piazza Bra 2",        
         "createDate": "Prima metà del XVI secolo",
         "lat": 45.44,
         "long": 10.99,
@@ -143,7 +143,7 @@
     {
         "id": 70,
         "idPercorso":1,
-        "name": "Parco delle Mura",
+        "name": "Parco delle Mura 2",
         "createDate": "Tra il 1300 e il 1850 circa",
         "lat": 45.45,
         "long": 10.98,
@@ -156,7 +156,7 @@
     {
         "id": 71,
         "idPercorso":1,
-        "name": "Parco dell'Adige",
+        "name": "Parco dell'Adige 2",
         "createDate": "Febbraio 28, 2005",
         "lat": 45.42,
         "long": 10.97,
@@ -169,7 +169,7 @@
     {
         "id": 72,
         "idPercorso":1,
-        "name": "Parco Naturale Regionale della Lessinia",
+        "name": "Parco Naturale Regionale della Lessinia 2",
         "createDate": "Gennaio 30, 1990",
         "lat": 45.69,
         "long": 11.05,
@@ -183,7 +183,7 @@
     {
         "id": 73,
         "idPercorso":1,
-        "name": "Giardino Giusti",
+        "name": "Giardino Giusti 2",
         "createDate": "Fine del 1400",
         "lat": 45.44,
         "long": 11.01,
@@ -196,7 +196,7 @@
     {
         "id": 74,
         "idPercorso":1,
-        "name": "Parco Giardino Sigurtà",
+        "name": "Parco Giardino Sigurtà 2",
         "createDate": "Marzo 14, 1407",
         "lat": 45.36,
         "long": 10.73,
@@ -209,7 +209,7 @@
     {
         "id": 75,
         "idPercorso":1,
-        "name": "Parco Baia delle Sirene",
+        "name": "Parco Baia delle Sirene 2",
         "createDate": "",
         "lat": 45.57,
         "long": 10.67,
@@ -222,7 +222,7 @@
     {
         "id": 76,
         "idPercorso":1,
-        "name": "Parco Agricampeggio Borghetto",
+        "name": "Parco Agricampeggio Borghetto 2",
         "createDate": "1900",
         "lat": 45.35,
         "long": 10.72,
@@ -235,7 +235,7 @@
     {
         "id": 77,
         "idPercorso":1,
-        "name": "Parco delle Cascate",
+        "name": "Parco delle Cascate 2",
         "createDate": "",
         "lat": 45.59,
         "long": 10.90,
@@ -248,10 +248,10 @@
     {
         "id": 78,
         "idPercorso":1,
-        "name": "Giardino di Pojega",
+        "name": "Giardino di Pojega 2",
         "createDate": "1783",
         "lat": 45.53,
-        "long": 10.95,
+        "long": 15.95,
         "distance": 0,
         "image": "parcopojega.png",
         "state": "Italia",

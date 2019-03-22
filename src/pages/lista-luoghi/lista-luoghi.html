@@ -1,5 +1,5 @@
 <!--
-  Generated template for the PreferitiPage page.
+  Generated template for the ListaLuoghiPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,8 +7,10 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>preferiti</ion-title>
-    
+    <ion-title>listaLuoghi</ion-title>
+    <button end (click) = "closeModal()">
+        <ion-icon name="md-arrow-back"></ion-icon>
+  </button>
   </ion-navbar>
 
 </ion-header>
@@ -16,7 +18,7 @@
 
 <ion-content padding>
 
-    <h1>Preferiti</h1>
+    <h1>Luoghi</h1>
     <ion-list [virtualScroll]="places" [headerFn]="customHeaderFn">
   
       <ion-item *virtualItem="let place" (click)="goPlaceDetails(place)" detail-push>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  NavController, NavParams, LoadingController, ModalController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { DettaglioPostiPage } from '../dettaglio-posti/dettaglio-posti';
+import { ListaLuoghiPage } from '../lista-luoghi/lista-luoghi';
 
 
 
@@ -76,8 +77,12 @@ export class PercorsiPage {
 
   goPlaceDetails(place){
   console.log(place);
-  const riggio = this.modalCtr.create( DettaglioPostiPage, { data: place })
-    riggio.present();
+  const var1 = this.modalCtr.create( DettaglioPostiPage, { data: place })
+    var1.present();
   }
+  goPercorsiDetails(percorso){
+    const var1 = this.modalCtr.create( ListaLuoghiPage, { data: percorso })
+      var1.present();
+    }
   
 }
